@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kulwinder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <h1 >KULWINDER</h1>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="" class="home"> HOME</a></li>
+                    <li><a href="" class="project"> PROJECTS</a></li>
+                    <li><a href="" class="abu">ABOUT ME</a></li>
+                    <li ><a href="" class="contact">CONTACT</a></li>
+                    <!-- <label for="check" class="close-menu">X</label> -->
+                </span>
+                <label for="check" class="open-menu">=</label>
+            </ul>
+        </nav>
+    </header>
+    <!-- NEXT PART-->
+        <div class="nextpart">
+            <div class="next1">
+                <img src="kulwinder-pic.jpeg" class="image">
+                <div class="next2">
+                    <h1 class="tag">KULWINDER SINGH</h1>
+                <p>A highly motivated and enthusiastic recent graduate with a strong academic background and a passion for learning new technologies and concepts. Possess excellent problem-solving, communication, and organizational skills. Eager to contribute my knowledge, fresh perspective, and strong work ethic to a dynamic team environment. Adept at adapting to new challenges, quick to learn new skills, and capable of delivering high-quality results.</p>
+                </div>
+            </div>
+        </div>
+    <!--END OF NEXT PART-->
+     <!--education --> 
+        <div class="educate">
+        <div class="about">
+                <h1 class="h1h">In Brief.......</h1>
+                <p class="pr">"I am Kulwinder Singh, a passionate web developer with expertise in front-end and back-end technologies. With a Bachelor's degree in Arts and professional training in Web Design & Development, I have honed my skills in HTML, CSS, JavaScript, React.js, Node.js, PHP, and MySQL. I am driven by a desire to create dynamic, user-friendly websites that enhance user experience. Constantly learning and adapting to new trends, I aim to bring innovative solutions to the digital world."</p>
+        </div>
+        <div class="skills">
+            <h1 class="h1h">Skills</h1>
+            <section id="skills">
+                <table >
+                    <tr>
+                        <th>Category</th>
+                        <th>Technologies</th>
+                    </tr>
+                    <tr>
+                        <td>Front-End</td>
+                        <td>HTML, CSS, JavaScript, React.js</td>
+                    </tr>
+                    <tr>
+                        <td>Back-End</td>
+                        <td>Node.js, PHP, MySQL</td>
+                    </tr>
+                    <tr>
+                        <td>Other Skills</td>
+                        <td>Web Design, Responsive UI, Debugging</td>
+                    </tr>
+                </table>
+            </section>
+            
+        </div>
+        </div>
+
+
+    <!--end of education --> 
+    <!-- time -->
+     <div class="clock1">
+    <div id="clock" class="clock"></div>
+    </div>
+    <!--end of  time -->
+    <!-- interst -->
+    <div class="sata">
+        <section id="interests">
+            <h1 >Interests</h1>
+            <p class="pr">I have a strong passion for technology and continuous learning. My interests include web development, designing user-friendly interfaces, and staying updated with the latest programming trends. In my free time, I enjoy playing chess, which helps me enhance my strategic thinking and problem-solving skills. I also love exploring AI and digital marketing, as they open new opportunities in the tech industry.</p>
+            <ul >
+                <li>Web Development & UI/UX Design</li>
+                <li>Learning New Programming Technologies</li>
+                <li>Playing Chess ♟️</li>
+                <li>Surfing the Internet 🌍</li>
+                <li>Exploring AI and Digital Marketing</li>
+            </ul>
+        </section>
+    </div>
+    <!-- end interst -->
+        <div class="last">
+            <div class="cont">
+              
+              <div class="ana"><a href=" ">facebook</a></div>
+              <div class="ana"><a href=" ">whatsapp</a></div>
+              <div class="ana"><a href=" ">twitter</a></div>
+              <div class="ana"><a href=" ">instagram</a></div>
+            </div>
+        </div>
+
+</body>
+<script>
+
+
+    function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    
+</script>
+
+</html>
